@@ -1,5 +1,4 @@
 # Viterbi-Algorithm
-Java implementation of the viterbi algorithm for parts of speech tagging
 
 The algorithm finds the most likely path between a series of states by computing the max probability of a current state based on a series of previous probabilities.  Formuaically for every state (tag) s' calculate the max of product v[s', t-1] * a[s', s] * b[s, w_t] where "a" is our transition probability matrix, "b" is our emission probability matrix, w_t is the current word, and "v" is a trellis of Cell objects. 
 
